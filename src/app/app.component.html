@@ -1,0 +1,23 @@
+<div class="container mt-5">
+
+<ul class="list-group">
+
+  <li *ngFor="let person of persons" class="list-group-item">
+    {{ person.name }} - {{ person.age }}
+  </li>
+
+</ul>
+
+<div class="row mt-5">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Enter name" [(ngModel)]="name">
+  </div>
+  <div class="col">
+    <input type="number" class="form-control" placeholder="Enter age" [(ngModel)]="age">
+  </div>
+  <div class="col">
+    <button class="btn btn-primary btn-block" (click)="add(name, age)">Add</button>
+  </div>
+</div>
+
+</div>
